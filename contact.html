@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your psychology session online or get in touch with questions. Professional telehealth psychology services across Australia.">
+    <title>Contact & Booking | Affirming Minds</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .booking-section {
+            background: linear-gradient(135deg, var(--primary-teal-light) 0%, var(--primary-teal) 100%);
+            color: var(--text-light);
+            padding: var(--spacing-xxl) 0;
+            text-align: center;
+        }
+
+        .booking-section h2 {
+            color: var(--text-light);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .booking-widget {
+            background: var(--text-light);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-xl);
+            margin: var(--spacing-xl) 0;
+            color: var(--text-dark);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xxl);
+            margin: var(--spacing-xl) 0;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-xl);
+            }
+        }
+
+        .contact-form {
+            background: var(--text-light);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .contact-info {
+            background: var(--text-light);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--spacing-lg);
+            padding: var(--spacing-md);
+            background: var(--light-gray);
+            border-radius: var(--border-radius);
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            margin-right: var(--spacing-md);
+            color: var(--primary-teal);
+        }
+
+        .response-time {
+            background: linear-gradient(135deg, rgba(74, 155, 155, 0.1), rgba(74, 155, 155, 0.05));
+            border-left: 4px solid var(--primary-teal);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        .office-hours {
+            background: var(--light-gray);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            margin: var(--spacing-lg) 0;
+        }
+
+        .office-hours h4 {
+            color: var(--primary-teal);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-sm);
+        }
+
+        .booking-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .step-card {
+            background: var(--text-light);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number-large {
+            background: var(--primary-teal);
+            color: var(--text-light);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin: 0 auto var(--spacing-md);
+        }
+
+        .location-notice {
+            background: #E3F2FD;
+            border: 2px solid #1976D2;
+            border-radius: var(--border-radius);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .location-notice h4 {
+            color: #0D47A1;
+            margin-bottom: var(--spacing-sm);
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">Affirming Minds</a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Meg</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="telehealth.html" class="nav-link">Telehealth</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Booking Section -->
+        <section class="booking-section">
+            <div class="container">
+                <h1>Book Your Session</h1>
+                <p style="font-size: 1.25rem; margin-bottom: var(--spacing-xl);">Ready to take the next step? Book your session online or get in touch with any questions.</p>
+
+                <div class="booking-widget">
+                    <h3>Online Booking</h3>
+                    <p>Book your session through our secure Halaxy booking system. Choose a time that works for you and complete your intake forms online.</p>
+
+                    <!-- Placeholder for Halaxy booking widget -->
+                    <div style="background: var(--light-gray); padding: var(--spacing-xl); border-radius: var(--border-radius); margin: var(--spacing-lg) 0;">
+                        <p><strong>Halaxy Booking Widget</strong></p>
+                        <p>This is where the Halaxy booking widget would be embedded. For now, please use the button below to access our booking system.</p>
+                    </div>
+
+                    <a href="#" class="btn btn-primary" style="background: var(--primary-teal); color: var(--text-light);">Book Now via Halaxy</a>
+                    <p style="margin-top: var(--spacing-md); font-size: 0.9rem;">You'll be redirected to our secure booking system</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Steps -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">How to Book</h2>
+
+                <div class="booking-steps">
+                    <div class="step-card">
+                        <div class="step-number-large">1</div>
+                        <h3>Choose Your Session</h3>
+                        <p>Select the type of session you need and find a convenient time in our online booking system.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number-large">2</div>
+                        <h3>Complete Forms</h3>
+                        <p>Fill out your secure intake forms online before your first session to make the most of our time together.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number-large">3</div>
+                        <h3>Attend Your Session</h3>
+                        <p>Join your session via the secure link we'll send you. Sessions are 50 minutes via telehealth.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number-large">4</div>
+                        <h3>Follow Up</h3>
+                        <p>Receive your invoice and claim your Medicare rebate if applicable. Book future sessions as needed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <p>Have questions before booking? Get in touch and we'll respond within 1-2 business days.</p>
+
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name <span style="color: var(--error);">*</span></label>
+                                <input type="text" id="name" name="name" required aria-describedby="name-help">
+                                <small id="name-help">We'll use this to address you in our response</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address <span style="color: var(--error);">*</span></label>
+                                <input type="email" id="email" name="email" required aria-describedby="email-help">
+                                <small id="email-help">We'll respond to this email address</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number (Optional)</label>
+                                <input type="tel" id="phone" name="phone" aria-describedby="phone-help">
+                                <small id="phone-help">Include if you'd prefer us to call you back</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inquiry-type">Inquiry Type</label>
+                                <select id="inquiry-type" name="inquiry-type">
+                                    <option value="booking">Booking a Session</option>
+                                    <option value="services">Questions about Services</option>
+                                    <option value="pricing">Pricing & Funding Questions</option>
+                                    <option value="telehealth">Telehealth Support</option>
+                                    <option value="professional">Professional Services</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Your Message <span style="color: var(--error);">*</span></label>
+                                <textarea id="message" name="message" required aria-describedby="message-help" placeholder="Please share any questions, concerns, or specific needs you'd like us to know about..."></textarea>
+                                <small id="message-help">Be as detailed as you'd like - this helps us provide a more helpful response</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label style="display: flex; align-items: start; gap: var(--spacing-sm);">
+                                    <input type="checkbox" required style="width: auto; margin-top: 4px;">
+                                    <span>I understand this is not a crisis service and if I need immediate support, I should contact emergency services or crisis helplines. <span style="color: var(--error);">*</span></span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+
+                        <div class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:hello@affirmingminds.com.au">hello@affirmingminds.com.au</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>0400 XXX XXX</p>
+                                <small>Please note: We primarily respond via email for non-urgent inquiries</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <span class="contact-icon">💻</span>
+                            <div>
+                                <h4>Online Booking</h4>
+                                <p>Available 24/7 via Halaxy</p>
+                                <small>Book sessions, complete forms, and manage appointments</small>
+                            </div>
+                        </div>
+
+                        <div class="response-time">
+                            <h4>Response Times</h4>
+                            <p>We aim to respond to all inquiries within 1-2 business days. If you need immediate support, please contact the crisis resources listed below.</p>
+                        </div>
+
+                        <div class="office-hours">
+                            <h4>Session Times Available</h4>
+                            <div class="hours-grid">
+                                <div>
+                                    <strong>Monday - Thursday</strong><br>
+                                    9:00 AM - 6:00 PM
+                                </div>
+                                <div>
+                                    <strong>Friday</strong><br>
+                                    9:00 AM - 4:00 PM
+                                </div>
+                                <div>
+                                    <strong>Saturday</strong><br>
+                                    9:00 AM - 1:00 PM
+                                </div>
+                                <div>
+                                    <strong>Sunday</strong><br>
+                                    Closed
+                                </div>
+                            </div>
+                            <p style="margin-top: var(--spacing-sm); font-size: 0.9rem;">Times shown are Adelaide time (ACST/ACDT). We can accommodate different time zones across Australia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Notice -->
+        <section class="section">
+            <div class="container">
+                <div class="location-notice">
+                    <h4>Telehealth Only Practice</h4>
+                    <p>We are a telehealth-only practice, which means all sessions are conducted online via secure video connection. We do not have a physical office for in-person appointments.</p>
+                    <p><strong>This allows us to:</strong></p>
+                    <ul>
+                        <li>Serve clients across all of Australia</li>
+                        <li>Provide a more comfortable, accessible environment</li>
+                        <li>Eliminate travel barriers and waiting room stress</li>
+                        <li>Offer flexible scheduling options</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preparation Tips -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Before Your First Session</h2>
+
+                <div class="card">
+                    <h3>What to Prepare</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg);">
+                        <div>
+                            <h4>Documents</h4>
+                            <ul>
+                                <li>Mental Health Care Plan (if you have one)</li>
+                                <li>GP referral</li>
+                                <li>Any relevant medical reports</li>
+                                <li>List of current medications</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4>Technology</h4>
+                            <ul>
+                                <li>Test your camera and microphone</li>
+                                <li>Ensure stable internet connection</li>
+                                <li>Have a backup phone nearby</li>
+                                <li>Close unnecessary programs</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4>Environment</h4>
+                            <ul>
+                                <li>Find a private, quiet space</li>
+                                <li>Have water and tissues nearby</li>
+                                <li>Comfortable seating</li>
+                                <li>Any comfort items you need</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4>Questions to Consider</h4>
+                            <ul>
+                                <li>What brought you to seek therapy?</li>
+                                <li>What would you like to achieve?</li>
+                                <li>Any concerns about starting therapy?</li>
+                                <li>What has/hasn't worked in the past?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crisis Resources -->
+        <section class="section">
+            <div class="container">
+                <div class="crisis-box">
+                    <h4>Need Immediate Support?</h4>
+                    <p>If you're in crisis or need immediate support, please reach out to:</p>
+                    <ul>
+                        <li><strong>Lifeline:</strong> 13 11 14 (24/7)</li>
+                        <li><strong>Suicide Call Back Service:</strong> 1300 659 467</li>
+                        <li><strong>QLife (LGBTQIA+ support):</strong> 1800 184 527</li>
+                        <li><strong>1800RESPECT (sexual assault/family violence):</strong> 1800 737 732</li>
+                        <li><strong>Kids Helpline:</strong> 1800 55 1800</li>
+                        <li><strong>Emergency:</strong> 000</li>
+                    </ul>
+                    <p style="margin-top: var(--spacing-md);"><strong>Please note:</strong> Our email and contact form are not monitored for crisis situations. If you're in immediate danger, please contact emergency services.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Affirming Minds</h4>
+                    <p>Neuro-affirming, inclusive telehealth psychology services across Australia.</p>
+                    <p>AHPRA Registration: PSY0002XXXXX</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="about.html">About Meg</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="telehealth.html">Telehealth Info</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Important Information</h4>
+                    <p>This service is not a crisis service. If you need immediate support, please contact emergency services or crisis helplines.</p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Terms of Service</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Affirming Minds. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet Meg Wilson - Registered psychologist, neurodivergent, LGBTQIA+ community member. Offering neuro-affirming, trauma-informed telehealth psychology across Australia.">
+    <title>About Meg | Affirming Minds</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .bio-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-xl);
+            margin: var(--spacing-xl) 0;
+        }
+
+        @media (min-width: 768px) {
+            .bio-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        .bio-main {
+            background: var(--text-light);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .bio-sidebar {
+            background: linear-gradient(135deg, var(--primary-teal-light) 0%, var(--primary-teal) 100%);
+            color: var(--text-light);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius);
+            height: fit-content;
+        }
+
+        .bio-sidebar h3 {
+            color: var(--text-light);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .bio-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bio-sidebar li {
+            margin-bottom: var(--spacing-sm);
+            padding-left: var(--spacing-lg);
+            position: relative;
+        }
+
+        .bio-sidebar li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .photo-placeholder {
+            width: 200px;
+            height: 200px;
+            background: var(--light-gray);
+            border-radius: 50%;
+            margin: 0 auto var(--spacing-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-gray);
+        }
+
+        .approach-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .approach-card {
+            background: var(--text-light);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary-teal);
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">Affirming Minds</a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About Meg</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="telehealth.html" class="nav-link">Telehealth</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Hi, I'm Meg</h1>
+                <p class="hero-subtitle">Registered Psychologist | Neurodivergent | LGBTQIA+ Community Member</p>
+            </div>
+        </section>
+
+        <!-- Rainbow accent bar -->
+        <div class="rainbow-accent"></div>
+
+        <!-- Bio Section -->
+        <section class="section">
+            <div class="container">
+                <div class="bio-container">
+                    <div class="bio-main">
+                        <div class="photo-placeholder">
+                            [Photo]
+                        </div>
+
+                        <h2>My Story</h2>
+
+                        <p>Hi! I'm Meg, and I'm not your typical psychologist. I'm a proudly neurodivergent (Autistic and ADHD) member of the LGBTQIA+ community who discovered my neurotype later in life – an experience that fundamentally changed how I understand both myself and the field of psychology.</p>
+
+                        <p>Like many late-diagnosed neurodivergent folks, I spent years wondering why things that seemed easy for others felt impossibly hard for me, and why I had to work so much harder just to appear "normal." My own journey through mental health challenges, late diagnosis, and learning to unmask has given me a deep, personal understanding of what my clients experience.</p>
+
+                        <p>I bring both professional expertise and lived experience to my practice. Having worked extensively with Parkinson's SA, the Department of Veterans' Affairs, and in work rehabilitation settings, I've developed a special interest in supporting people through complex life challenges – whether that's chronic health conditions, neurodivergent discovery, gender and sexuality exploration, or navigating systems that weren't designed for minds like ours.</p>
+
+                        <h2>My Approach</h2>
+
+                        <p>I believe in doing psychology differently. Traditional approaches often try to "fix" or "normalize" people, but I'm more interested in helping you understand and work with your unique brain, not against it. My approach is:</p>
+
+                        <div class="approach-cards">
+                            <div class="approach-card">
+                                <h4>Collaborative</h4>
+                                <p>You're the expert on your life. I'm here to walk alongside you, not to tell you what to do.</p>
+                            </div>
+
+                            <div class="approach-card">
+                                <h4>Neuro-Affirming</h4>
+                                <p>Your brain isn't broken. We'll work with your neurotype, not against it.</p>
+                            </div>
+
+                            <div class="approach-card">
+                                <h4>Trauma-Informed</h4>
+                                <p>Understanding how past experiences shape present challenges, without re-traumatizing.</p>
+                            </div>
+
+                            <div class="approach-card">
+                                <h4>Conversational</h4>
+                                <p>No power trips, no jargon. Just two humans having real conversations about real stuff.</p>
+                            </div>
+                        </div>
+
+                        <h2>Why Telehealth?</h2>
+
+                        <p>I chose to practice exclusively via telehealth because I understand the sensory and social challenges of traditional therapy settings. No fluorescent lights, no overwhelming waiting rooms, no need to maintain eye contact if that's uncomfortable for you. You can be in your safe space, with your comfort items, pets, or stim toys – whatever helps you feel most yourself.</p>
+
+                        <p>Plus, telehealth means I can support people across Australia, bringing specialized neuro-affirming and LGBTQIA+ affirmative care to folks who might not have access to it locally.</p>
+
+                        <h2>Beyond the Therapy Room</h2>
+
+                        <p>When I'm not in sessions, you'll find me advocating for neurodivergent and LGBTQIA+ rights, providing training to other professionals on affirming practices, and constantly learning about how to better support the diverse humans I work with. I believe in walking the walk – living authentically as my neurodivergent, queer self while supporting others to do the same.</p>
+                    </div>
+
+                    <div class="bio-sidebar">
+                        <h3>Qualifications</h3>
+                        <ul>
+                            <li>Registered Psychologist (AHPRA: PSY0002XXXXX)</li>
+                            <li>Bachelor of Psychology (Honours)</li>
+                            <li>Master of Clinical Psychology</li>
+                            <li>Certified in Trauma-Informed Care</li>
+                            <li>LGBTQIA+ Affirmative Practice Training</li>
+                        </ul>
+
+                        <h3>Professional Memberships</h3>
+                        <ul>
+                            <li>Australian Psychological Society (APS)</li>
+                            <li>Australian Association for Cognitive and Behaviour Therapy</li>
+                        </ul>
+
+                        <h3>Special Interests</h3>
+                        <ul>
+                            <li>Neurodivergent identities (Autism, ADHD)</li>
+                            <li>LGBTQIA+ mental health</li>
+                            <li>Late diagnosis support</li>
+                            <li>Complex trauma</li>
+                            <li>Chronic health conditions</li>
+                            <li>Burnout and masking</li>
+                            <li>Identity exploration</li>
+                        </ul>
+
+                        <h3>Approaches I Use</h3>
+                        <ul>
+                            <li>Cognitive Behaviour Therapy (CBT)</li>
+                            <li>Acceptance and Commitment Therapy (ACT)</li>
+                            <li>Dialectical Behaviour Therapy (DBT) skills</li>
+                            <li>Somatic approaches</li>
+                            <li>Neurodiversity-affirming adaptations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section">
+            <div class="container text-center">
+                <h2>Ready to Work Together?</h2>
+                <p>If you're looking for a psychologist who gets it – really gets it – I'd love to support you on your journey.</p>
+                <div class="mt-3">
+                    <a href="contact.html" class="btn btn-primary">Book a Session</a>
+                    <a href="services.html" class="btn btn-secondary">Explore Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crisis Resources -->
+        <section class="section">
+            <div class="container">
+                <div class="crisis-box">
+                    <h4>Need Immediate Support?</h4>
+                    <p>If you're in crisis or need immediate support, please reach out to:</p>
+                    <ul>
+                        <li><strong>Lifeline:</strong> 13 11 14 (24/7)</li>
+                        <li><strong>Suicide Call Back Service:</strong> 1300 659 467</li>
+                        <li><strong>QLife (LGBTQIA+ support):</strong> 1800 184 527</li>
+                        <li><strong>Emergency:</strong> 000</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Affirming Minds</h4>
+                    <p>Neuro-affirming, inclusive telehealth psychology services across Australia.</p>
+                    <p>AHPRA Registration: PSY0002XXXXX</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="about.html">About Meg</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="telehealth.html">Telehealth Info</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Important Information</h4>
+                    <p>This service is not a crisis service. If you need immediate support, please contact emergency services or crisis helplines.</p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Terms of Service</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Affirming Minds. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

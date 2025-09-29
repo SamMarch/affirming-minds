@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transparent pricing for psychology services. Medicare rebates available. NDIS accepted. Clear cancellation policy.">
+    <title>Pricing | Affirming Minds</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .pricing-table {
+            background: var(--text-light);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .pricing-table table {
+            margin: 0;
+        }
+
+        .pricing-table th {
+            background: var(--primary-teal);
+            color: var(--text-light);
+            padding: var(--spacing-lg);
+        }
+
+        .pricing-table td {
+            padding: var(--spacing-lg);
+        }
+
+        .pricing-table tr:nth-child(even) {
+            background: var(--light-gray);
+        }
+
+        .pricing-highlight {
+            background: #E8F5E9;
+            font-weight: 600;
+            color: #2E7D32;
+        }
+
+        .policy-box {
+            background: #FFF3E0;
+            border: 2px solid #FE8C00;
+            border-radius: var(--border-radius);
+            padding: var(--spacing-xl);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .policy-box h3 {
+            color: #E65100;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .policy-table {
+            width: 100%;
+            margin: var(--spacing-md) 0;
+        }
+
+        .policy-table td {
+            padding: var(--spacing-md);
+            border-bottom: 1px solid rgba(230, 81, 0, 0.2);
+        }
+
+        .policy-table td:first-child {
+            font-weight: 600;
+            width: 40%;
+        }
+
+        .medicare-steps {
+            background: var(--text-light);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-xl);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: start;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-lg);
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .step:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .step-number {
+            background: var(--primary-teal);
+            color: var(--text-light);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-right: var(--spacing-lg);
+            flex-shrink: 0;
+        }
+
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .payment-card {
+            background: var(--text-light);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            border: 2px solid var(--light-gray);
+            text-align: center;
+        }
+
+        .payment-card h4 {
+            color: var(--primary-teal);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .important-note {
+            background: linear-gradient(135deg, rgba(74, 155, 155, 0.1), rgba(74, 155, 155, 0.05));
+            border-left: 4px solid var(--primary-teal);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        .important-note h4 {
+            color: var(--primary-teal-dark);
+            margin-bottom: var(--spacing-sm);
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">Affirming Minds</a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Meg</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
+                <li><a href="telehealth.html" class="nav-link">Telehealth</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Transparent Pricing</h1>
+                <p class="hero-subtitle">Clear, upfront pricing with Medicare rebates available</p>
+            </div>
+        </section>
+
+        <!-- Rainbow accent bar -->
+        <div class="rainbow-accent"></div>
+
+        <!-- Service Fees Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Service Fees</h2>
+
+                <div class="table-container">
+                    <div class="pricing-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Service</th>
+                                    <th>Duration</th>
+                                    <th>Fee</th>
+                                    <th>Medicare Rebate</th>
+                                    <th>Out of Pocket</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Individual Therapy</strong></td>
+                                    <td>50 minutes</td>
+                                    <td>$210</td>
+                                    <td>$96.65</td>
+                                    <td class="pricing-highlight">$113.35</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>NDIS Sessions</strong></td>
+                                    <td>50 minutes</td>
+                                    <td>$230</td>
+                                    <td>N/A</td>
+                                    <td>Covered by NDIS</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Professional Services</strong></td>
+                                    <td>60 minutes</td>
+                                    <td>$210</td>
+                                    <td>N/A</td>
+                                    <td>$210</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Reports & Letters</strong></td>
+                                    <td>Per document</td>
+                                    <td>$210/hour</td>
+                                    <td>N/A</td>
+                                    <td>Varies</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="important-note">
+                    <h4>Important Note</h4>
+                    <p>We do not offer bulk billing. This allows us to provide longer sessions, maintain quality care, and ensure the sustainability of our practice. We understand this may be a barrier for some, and we're happy to discuss payment plans if needed.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cancellation Policy Section -->
+        <section class="section">
+            <div class="container">
+                <div class="policy-box">
+                    <h3>Cancellation Policy</h3>
+                    <p>We understand that life happens. To ensure fairness for all clients and maintain practice sustainability, the following cancellation policy applies:</p>
+
+                    <table class="policy-table">
+                        <tr>
+                            <td>Less than 24 hours notice</td>
+                            <td>Full session fee charged</td>
+                        </tr>
+                        <tr>
+                            <td>24-48 hours notice</td>
+                            <td>50% of session fee charged</td>
+                        </tr>
+                        <tr>
+                            <td>More than 48 hours notice</td>
+                            <td>No charge</td>
+                        </tr>
+                        <tr>
+                            <td>Genuine emergencies</td>
+                            <td>Considered case-by-case</td>
+                        </tr>
+                    </table>
+
+                    <p style="margin-top: var(--spacing-lg);"><strong>Please note:</strong> Medicare rebates cannot be claimed for sessions that are cancelled or not attended.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medicare Information Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Medicare Rebates</h2>
+
+                <div class="medicare-steps">
+                    <h3>How to Access Medicare Rebates</h3>
+                    <p>You can receive Medicare rebates for up to 10 individual psychology sessions per calendar year with a Mental Health Care Plan.</p>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h4>Visit Your GP</h4>
+                            <p>Book a longer appointment with your GP to discuss your mental health. Let them know you'd like a Mental Health Care Plan (MHCP) and a referral to see a psychologist.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h4>Complete the Assessment</h4>
+                            <p>Your GP will ask you some questions about your mental health and may give you a questionnaire to complete. This helps them understand your needs and create your care plan.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h4>Get Your Referral</h4>
+                            <p>Your GP will provide you with a Mental Health Care Plan and a referral to a psychologist. You can ask them to refer you specifically to Meg Wilson Psychology.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h4>Book Your Session</h4>
+                            <p>Contact us to book your first session. We'll need your referral details to ensure you can claim your rebate.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div>
+                            <h4>Claim Your Rebate</h4>
+                            <p>After your session, we'll process the Medicare rebate directly if you're registered for Medicare online. Otherwise, we'll provide you with an invoice to claim manually.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="important-note">
+                    <h4>Good to Know</h4>
+                    <ul>
+                        <li>The 10 sessions reset each calendar year (January 1st)</li>
+                        <li>After 6 sessions, you'll need to see your GP for a review to access the remaining 4 sessions</li>
+                        <li>Your GP can re-refer you each year</li>
+                        <li>You can't use Medicare and NDIS funding for the same session</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Methods Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Payment Methods</h2>
+
+                <div class="payment-methods">
+                    <div class="payment-card">
+                        <h4>Session Payment</h4>
+                        <p>All sessions are invoiced through Halaxy, our secure practice management system. Payment is required at the time of service.</p>
+                    </div>
+
+                    <div class="payment-card">
+                        <h4>Medicare Rebates</h4>
+                        <p>We can process Medicare rebates directly if you're registered for Medicare online claiming. Rebates are typically received within 24-48 hours.</p>
+                    </div>
+
+                    <div class="payment-card">
+                        <h4>NDIS Invoicing</h4>
+                        <p>We can invoice NDIS directly for plan-managed or self-managed participants. NDIA-managed participants welcome.</p>
+                    </div>
+
+                    <div class="payment-card">
+                        <h4>Payment Plans</h4>
+                        <p>Financial hardship shouldn't be a barrier to mental health care. Please discuss payment plan options with us if needed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial Hardship Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Financial Accessibility</h2>
+
+                <div class="card">
+                    <h3>We Believe in Accessible Mental Health Care</h3>
+                    <p>We understand that the gap fee can be a significant barrier for many people. While we cannot offer bulk billing due to practice sustainability, we're committed to finding ways to make our services accessible.</p>
+
+                    <h4>Options to Consider:</h4>
+                    <ul>
+                        <li><strong>Payment plans:</strong> We can arrange weekly or fortnightly payment plans to spread the cost</li>
+                        <li><strong>Less frequent sessions:</strong> We can space sessions further apart to make them more affordable</li>
+                        <li><strong>NDIS funding:</strong> If you have a disability, you may be eligible for NDIS funding</li>
+                        <li><strong>Private health insurance:</strong> Some funds offer rebates for psychology (check your extras cover)</li>
+                        <li><strong>Workplace EAP:</strong> Your employer may offer free psychology sessions through an Employee Assistance Program</li>
+                    </ul>
+
+                    <p style="margin-top: var(--spacing-lg);">Please don't let financial concerns stop you from reaching out. We're happy to have a conversation about what might work for your situation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section">
+            <div class="container text-center">
+                <h2>Ready to Book?</h2>
+                <p>Have questions about pricing or payment options? We're here to help.</p>
+                <div class="mt-3">
+                    <a href="contact.html" class="btn btn-primary">Book a Session</a>
+                    <a href="faq.html" class="btn btn-secondary">View FAQ</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crisis Resources -->
+        <section class="section">
+            <div class="container">
+                <div class="crisis-box">
+                    <h4>Need Immediate Support?</h4>
+                    <p>If you're in crisis or need immediate support, please reach out to:</p>
+                    <ul>
+                        <li><strong>Lifeline:</strong> 13 11 14 (24/7)</li>
+                        <li><strong>Suicide Call Back Service:</strong> 1300 659 467</li>
+                        <li><strong>QLife (LGBTQIA+ support):</strong> 1800 184 527</li>
+                        <li><strong>Emergency:</strong> 000</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Affirming Minds</h4>
+                    <p>Neuro-affirming, inclusive telehealth psychology services across Australia.</p>
+                    <p>AHPRA Registration: PSY0002XXXXX</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="about.html">About Meg</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="telehealth.html">Telehealth Info</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Important Information</h4>
+                    <p>This service is not a crisis service. If you need immediate support, please contact emergency services or crisis helplines.</p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Terms of Service</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Affirming Minds. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

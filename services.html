@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Psychology services including individual therapy, neurodivergent support, LGBTQIA+ affirmative therapy, NDIS capacity building, and specialized programs.">
+    <title>Services | Affirming Minds</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .service-card {
+            background: var(--text-light);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-xl);
+            margin-bottom: var(--spacing-xl);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .service-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: var(--spacing-lg);
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+        }
+
+        .service-price {
+            background: var(--primary-teal);
+            color: var(--text-light);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .service-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: start;
+            gap: var(--spacing-sm);
+        }
+
+        .feature-icon {
+            color: var(--primary-teal);
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .service-highlight {
+            background: linear-gradient(135deg, rgba(74, 155, 155, 0.1), rgba(74, 155, 155, 0.05));
+            border-left: 4px solid var(--primary-teal);
+            padding: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        .specialization-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-sm);
+            margin: var(--spacing-md) 0;
+        }
+
+        .specialization-tag {
+            background: var(--light-gray);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">Affirming Minds</a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Meg</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="telehealth.html" class="nav-link">Telehealth</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Our Services</h1>
+                <p class="hero-subtitle">Evidence-based, affirming psychological support tailored to your unique needs</p>
+            </div>
+        </section>
+
+        <!-- Rainbow accent bar -->
+        <div class="rainbow-accent"></div>
+
+        <!-- Services Section -->
+        <section class="section">
+            <div class="container">
+                <!-- Individual Psychological Therapy -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <h2>Individual Psychological Therapy</h2>
+                        <span class="service-price">$210 per session</span>
+                    </div>
+
+                    <p>Compassionate, evidence-based psychological therapy delivered via secure telehealth. Each 50-minute session is tailored to your unique needs, drawing from a range of therapeutic approaches to find what works best for you.</p>
+
+                    <div class="service-highlight">
+                        <strong>Medicare Rebate Available:</strong> With a Mental Health Care Plan from your GP, you can receive a rebate of $96.65 per session, making your out-of-pocket cost $113.35.
+                    </div>
+
+                    <h3>What We Can Work On Together:</h3>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Anxiety and worry management</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Depression and low mood</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Trauma processing and recovery</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Life transitions and adjustments</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Relationship challenges</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Identity exploration</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Stress and burnout</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Grief and loss</span>
+                        </div>
+                    </div>
+
+                    <h3>Therapeutic Approaches:</h3>
+                    <p>We integrate evidence-based approaches including Cognitive Behavioural Therapy (CBT), Acceptance and Commitment Therapy (ACT), Dialectical Behaviour Therapy (DBT) skills, and somatic approaches – all adapted to be neuro-affirming and culturally responsive.</p>
+                </div>
+
+                <!-- Neurodivergent Support Services -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <h2>Neurodivergent Support Services</h2>
+                        <span class="service-price">$210 per session</span>
+                    </div>
+
+                    <p>Specialized support for Autistic and ADHD individuals, designed by someone who truly understands the neurodivergent experience. Whether you're newly diagnosed, self-identified, or exploring your neurotype, this is a safe space to be authentically yourself.</p>
+
+                    <div class="service-highlight">
+                        <strong>Note:</strong> We provide post-diagnosis support and exploration, not diagnostic assessments. We can help you understand your neurotype and develop strategies that work with your brain, not against it.
+                    </div>
+
+                    <h3>Areas of Support:</h3>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Post-diagnosis processing and identity integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Understanding and reducing masking</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Sensory needs and regulation strategies</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Executive function support</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Autistic/ADHD burnout recovery</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Self-advocacy skills</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Communication and social navigation</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Managing internalized ableism</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LGBTQIA+ Affirmative Therapy -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <h2>LGBTQIA+ Affirmative Therapy</h2>
+                        <span class="service-price">$210 per session</span>
+                    </div>
+
+                    <p>Genuine affirmative therapy from someone within the LGBTQIA+ community. This isn't just "friendly" therapy – it's therapy that deeply understands the unique joys and challenges of LGBTQIA+ life, including the intersection with neurodivergence.</p>
+
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Gender identity exploration and affirmation</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Coming out support at any life stage</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Navigating family and relationship dynamics</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Minority stress and discrimination</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Internalized homophobia/transphobia</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Intersection of LGBTQIA+ and neurodivergent identities</span>
+                        </div>
+                    </div>
+
+                    <p><strong>Safe and Affirming:</strong> Use whatever name and pronouns feel right for you. We can also provide support letters for gender-affirming care when appropriate.</p>
+                </div>
+
+                <!-- NDIS Psychological Services -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <h2>NDIS Psychological Services</h2>
+                        <span class="service-price">$230 per session</span>
+                    </div>
+
+                    <p>Capacity-building psychological support for NDIS participants. We focus on developing practical skills and strategies to help you achieve your goals and increase your independence.</p>
+
+                    <div class="service-highlight">
+                        <strong>NDIS Funding:</strong> These services can be funded through your NDIS plan under Capacity Building - Improved Daily Living or Improved Relationships categories.
+                    </div>
+
+                    <h3>Support Areas:</h3>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Emotional regulation and coping strategies</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Social skills and relationship building</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Independence and life skills</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Managing anxiety and mood</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Building self-advocacy skills</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Navigating change and transitions</span>
+                        </div>
+                    </div>
+
+                    <p><strong>Note:</strong> You cannot use NDIS and Medicare funding for the same session. We'll help you understand which funding source is most appropriate for your needs.</p>
+                </div>
+
+                <!-- Professional Services -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <h2>Professional Development & Supervision</h2>
+                        <span class="service-price">$210 per hour</span>
+                    </div>
+
+                    <p>Supporting other professionals to provide truly affirming care. Whether you're a psychologist, counsellor, or allied health professional, we offer supervision, mentoring, and training on neurodivergent-affirming and LGBTQIA+ affirmative practices.</p>
+
+                    <h3>Services Include:</h3>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Clinical supervision for provisional psychologists</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Professional mentoring and consultation</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Training on neuro-affirming practices</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>LGBTQIA+ cultural competency development</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Workplace presentations and workshops</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">→</span>
+                            <span>Case consultation and support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialised Programs -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <h2>Specialised Support Programs</h2>
+                        <span class="service-price">$210-$230 per session</span>
+                    </div>
+
+                    <p>Drawing on extensive experience in specialized settings, we offer targeted support for specific populations and conditions.</p>
+
+                    <h3>Parkinson's & Parkinson's Plus Syndromes</h3>
+                    <p>Specialized psychological support for individuals and families affected by Parkinson's disease and related conditions. We understand the unique psychological challenges that come with movement disorders.</p>
+
+                    <h3>Carer Support</h3>
+                    <p>Dedicated support for carers managing their own wellbeing while caring for others. We address carer burnout, stress management, and maintaining your own identity alongside caring responsibilities.</p>
+
+                    <h3>Complex Mental Health</h3>
+                    <p>Support for individuals with complex presentations including personality disorders, complex trauma, and co-occurring conditions. We take a compassionate, non-judgmental approach to complexity.</p>
+
+                    <h3>Veterans Services</h3>
+                    <p>Specialized support for veterans dealing with transition to civilian life, trauma, and service-related mental health challenges. DVA funding may be available.</p>
+
+                    <div class="specialization-grid">
+                        <span class="specialization-tag">Chronic Health</span>
+                        <span class="specialization-tag">Pain Management</span>
+                        <span class="specialization-tag">Adjustment Disorders</span>
+                        <span class="specialization-tag">Work Rehabilitation</span>
+                        <span class="specialization-tag">Disability Support</span>
+                        <span class="specialization-tag">Family Therapy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section">
+            <div class="container text-center">
+                <h2>Ready to Get Started?</h2>
+                <p>Not sure which service is right for you? Book an initial session and we'll work it out together.</p>
+                <div class="mt-3">
+                    <a href="contact.html" class="btn btn-primary">Book a Session</a>
+                    <a href="pricing.html" class="btn btn-secondary">View Pricing Details</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crisis Resources -->
+        <section class="section">
+            <div class="container">
+                <div class="crisis-box">
+                    <h4>Need Immediate Support?</h4>
+                    <p>If you're in crisis or need immediate support, please reach out to:</p>
+                    <ul>
+                        <li><strong>Lifeline:</strong> 13 11 14 (24/7)</li>
+                        <li><strong>Suicide Call Back Service:</strong> 1300 659 467</li>
+                        <li><strong>QLife (LGBTQIA+ support):</strong> 1800 184 527</li>
+                        <li><strong>Emergency:</strong> 000</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Affirming Minds</h4>
+                    <p>Neuro-affirming, inclusive telehealth psychology services across Australia.</p>
+                    <p>AHPRA Registration: PSY0002XXXXX</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="about.html">About Meg</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="telehealth.html">Telehealth Info</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Important Information</h4>
+                    <p>This service is not a crisis service. If you need immediate support, please contact emergency services or crisis helplines.</p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Terms of Service</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Affirming Minds. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

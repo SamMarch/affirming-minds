@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about psychology services, Medicare, NDIS, telehealth, and getting started with therapy.">
+    <title>FAQ | Affirming Minds</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .faq-section {
+            margin: var(--spacing-xl) 0;
+        }
+
+        .faq-category {
+            background: var(--text-light);
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-xl);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .faq-category-header {
+            background: var(--primary-teal);
+            color: var(--text-light);
+            padding: var(--spacing-lg);
+        }
+
+        .faq-category-header h2 {
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            padding: var(--spacing-lg);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: var(--light-gray);
+        }
+
+        .faq-question:focus {
+            outline: 3px solid var(--primary-teal);
+            outline-offset: -3px;
+        }
+
+        .faq-icon {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--primary-teal);
+            transition: var(--transition);
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0 var(--spacing-lg) var(--spacing-lg);
+            line-height: var(--line-height);
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .faq-icon.active {
+            transform: rotate(45deg);
+        }
+
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .quick-link-card {
+            background: var(--text-light);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            text-align: center;
+            border: 2px solid var(--light-gray);
+            transition: var(--transition);
+        }
+
+        .quick-link-card:hover {
+            border-color: var(--primary-teal);
+            transform: translateY(-2px);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(74, 155, 155, 0.1), rgba(74, 155, 155, 0.05));
+            border-left: 4px solid var(--primary-teal);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-md) 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">Affirming Minds</a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Meg</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="telehealth.html" class="nav-link">Telehealth</a></li>
+                <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Frequently Asked Questions</h1>
+                <p class="hero-subtitle">Find answers to common questions about our services and getting started</p>
+            </div>
+        </section>
+
+        <!-- Rainbow accent bar -->
+        <div class="rainbow-accent"></div>
+
+        <!-- Quick Links -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Quick Navigation</h2>
+                <div class="quick-links">
+                    <div class="quick-link-card">
+                        <h3>Getting Started</h3>
+                        <p>First time booking, what to expect, preparation tips</p>
+                    </div>
+                    <div class="quick-link-card">
+                        <h3>Payments & Fees</h3>
+                        <p>Medicare, NDIS, pricing, cancellation policy</p>
+                    </div>
+                    <div class="quick-link-card">
+                        <h3>About Therapy</h3>
+                        <p>How therapy works, confidentiality, approaches</p>
+                    </div>
+                    <div class="quick-link-card">
+                        <h3>Technical Support</h3>
+                        <p>Telehealth setup, troubleshooting, requirements</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Sections -->
+        <section class="section">
+            <div class="container">
+                <!-- Getting Started -->
+                <div class="faq-category">
+                    <div class="faq-category-header">
+                        <h2>Getting Started</h2>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            How do I get a Mental Health Care Plan?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Getting a Mental Health Care Plan (MHCP) is straightforward:</p>
+                            <ol>
+                                <li><strong>Book a longer appointment with your GP</strong> - Tell them you'd like to discuss your mental health and get a MHCP</li>
+                                <li><strong>Complete an assessment</strong> - Your GP will ask about your mental health and may give you a questionnaire</li>
+                                <li><strong>Receive your plan and referral</strong> - Your GP will create the plan and provide a referral to a psychologist</li>
+                                <li><strong>Book your session</strong> - Contact us with your referral details to book your first session</li>
+                            </ol>
+                            <div class="highlight-box">
+                                <strong>Tip:</strong> You can ask your GP to refer you specifically to "Affirming Minds" to streamline the process.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you offer in-person sessions?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, we are a telehealth-only practice. This decision was made to:</p>
+                            <ul>
+                                <li>Provide accessible care across Australia</li>
+                                <li>Create a more comfortable environment for neurodivergent clients</li>
+                                <li>Eliminate sensory overwhelm from travel and waiting rooms</li>
+                                <li>Allow you to access therapy from your safe space</li>
+                                <li>Remove barriers like transport and mobility issues</li>
+                            </ul>
+                            <p>Many clients find telehealth more comfortable and convenient than in-person sessions once they try it.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Can I access your services from anywhere in Australia?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! As a registered psychologist, Meg can provide telehealth services to clients anywhere in Australia. This includes all states and territories.</p>
+                            <p>The only requirement is that you need to be physically located in Australia during the session for legal and insurance purposes.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What should I expect in my first session?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Your first session will include:</p>
+                            <ul>
+                                <li><strong>Getting to know you</strong> - We'll discuss what brought you to therapy and your goals</li>
+                                <li><strong>Understanding your background</strong> - Relevant history, current situation, support systems</li>
+                                <li><strong>Exploring your needs</strong> - What type of support would be most helpful</li>
+                                <li><strong>Discussing our approach</strong> - How we'll work together and what to expect</li>
+                                <li><strong>Planning next steps</strong> - Frequency of sessions and initial goals</li>
+                            </ul>
+                            <p>It's normal to feel nervous - we'll go at your pace and make sure you feel comfortable.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do I need to prepare anything before our first session?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Before your first session:</p>
+                            <ul>
+                                <li>Complete the intake forms we'll send you</li>
+                                <li>Test your technology 10-15 minutes early</li>
+                                <li>Find a private, comfortable space</li>
+                                <li>Have water and tissues nearby</li>
+                                <li>Think about what you'd like to get out of therapy (but don't stress if you're unsure)</li>
+                                <li>Bring any questions you have about the process</li>
+                            </ul>
+                            <p>Don't worry about having everything figured out - that's what we're here to work on together!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payments & Fees -->
+                <div class="faq-category">
+                    <div class="faq-category-header">
+                        <h2>Payments & Fees</h2>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you bulk bill?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, we don't offer bulk billing. Here's why:</p>
+                            <ul>
+                                <li><strong>Quality time:</strong> We provide full 50-minute sessions, not shortened appointments</li>
+                                <li><strong>Specialized care:</strong> Our neuro-affirming and LGBTQIA+ expertise requires additional training and resources</li>
+                                <li><strong>Practice sustainability:</strong> This allows us to maintain high-quality care and reasonable wait times</li>
+                                <li><strong>Comprehensive support:</strong> We can spend time on intake forms, between-session planning, and follow-up</li>
+                            </ul>
+                            <p>We understand the gap fee can be challenging. We're happy to discuss payment plans or less frequent sessions to make therapy more accessible.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Can I use both NDIS and Medicare for the same session?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, you cannot use both NDIS and Medicare funding for the same session. You must choose one funding source per session.</p>
+                            <div class="highlight-box">
+                                <strong>NDIS sessions:</strong> $230 per session, fully covered by your NDIS plan under Capacity Building<br>
+                                <strong>Medicare sessions:</strong> $210 per session with $96.65 rebate (out-of-pocket: $113.35)
+                            </div>
+                            <p>We can help you determine which funding source is most appropriate for your situation and goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What's your cancellation policy?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our cancellation policy is:</p>
+                            <ul>
+                                <li><strong>Less than 24 hours notice:</strong> Full session fee charged</li>
+                                <li><strong>24-48 hours notice:</strong> 50% of session fee charged</li>
+                                <li><strong>More than 48 hours notice:</strong> No charge</li>
+                                <li><strong>Genuine emergencies:</strong> Considered on a case-by-case basis</li>
+                            </ul>
+                            <p><strong>Important:</strong> Medicare rebates cannot be claimed for cancelled or missed sessions.</p>
+                            <p>We understand that life happens, especially when you're dealing with mental health challenges. If you're having a difficult time, please call us to discuss options.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            How do Medicare rebates work?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>With a Mental Health Care Plan, you can claim $96.65 per session back from Medicare:</p>
+                            <ul>
+                                <li><strong>You pay:</strong> $210 for the session</li>
+                                <li><strong>Medicare rebates:</strong> $96.65</li>
+                                <li><strong>Your out-of-pocket cost:</strong> $113.35</li>
+                            </ul>
+                            <p><strong>How to claim:</strong></p>
+                            <ul>
+                                <li>If you're registered for Medicare online, we can process the rebate immediately</li>
+                                <li>Otherwise, we'll provide you with an invoice to claim manually via Medicare</li>
+                                <li>You get 10 sessions per calendar year (resets January 1st)</li>
+                                <li>After 6 sessions, you need a GP review to access the remaining 4</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you offer payment plans?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! We believe financial stress shouldn't prevent you from accessing mental health care. Options include:</p>
+                            <ul>
+                                <li><strong>Weekly payment plans:</strong> Split session costs over several weeks</li>
+                                <li><strong>Fortnightly payments:</strong> Spread costs across pay periods</li>
+                                <li><strong>Less frequent sessions:</strong> Meet every 2-3 weeks instead of weekly</li>
+                                <li><strong>Shorter-term focused work:</strong> Intensive blocks of sessions with specific goals</li>
+                            </ul>
+                            <p>Please don't let cost concerns stop you from reaching out. We're happy to have a confidential conversation about what might work for your situation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Therapy -->
+                <div class="faq-category">
+                    <div class="faq-category-header">
+                        <h2>About Therapy</h2>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What's the difference between a psychologist and a psychiatrist?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Psychologists:</strong></p>
+                            <ul>
+                                <li>Provide therapy and counseling</li>
+                                <li>Help you develop coping strategies and skills</li>
+                                <li>Focus on behavior, thoughts, and emotions</li>
+                                <li>Cannot prescribe medication (in Australia)</li>
+                                <li>Usually see clients for longer-term therapy</li>
+                            </ul>
+                            <p><strong>Psychiatrists:</strong></p>
+                            <ul>
+                                <li>Medical doctors who specialize in mental health</li>
+                                <li>Can prescribe and manage medication</li>
+                                <li>Often focus on medication management</li>
+                                <li>Usually shorter appointments</li>
+                                <li>May also provide some therapy</li>
+                            </ul>
+                            <p>Many people see both - a psychologist for therapy and a psychiatrist for medication if needed.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            How long will I need therapy?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>This varies greatly depending on:</p>
+                            <ul>
+                                <li>Your goals and what you want to work on</li>
+                                <li>The complexity of your situation</li>
+                                <li>How you respond to therapy</li>
+                                <li>External factors and life changes</li>
+                                <li>Your preferred pace of work</li>
+                            </ul>
+                            <p>Some people benefit from short-term focused work (6-12 sessions), while others prefer longer-term support. We'll regularly check in about your progress and discuss whether to continue, take breaks, or wrap up.</p>
+                            <p><strong>Remember:</strong> You're in control. You can end therapy at any time, and we can always resume if needed later.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Are our sessions confidential?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, everything we discuss is confidential. However, there are some legal limits:</p>
+                            <p><strong>We must break confidentiality if:</strong></p>
+                            <ul>
+                                <li>You're at immediate risk of harming yourself</li>
+                                <li>You're at risk of harming someone else</li>
+                                <li>We're required by law (e.g., court order)</li>
+                                <li>You give written consent to share information</li>
+                            </ul>
+                            <p><strong>We'll always:</strong></p>
+                            <ul>
+                                <li>Discuss our concerns with you first when possible</li>
+                                <li>Only share the minimum information necessary</li>
+                                <li>Work with you to keep you safe</li>
+                                <li>Explain our decision-making process</li>
+                            </ul>
+                            <p>These situations are rare, and our priority is always your safety and wellbeing.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What therapeutic approaches do you use?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We use an integrative approach, drawing from various evidence-based therapies based on your needs:</p>
+                            <ul>
+                                <li><strong>Cognitive Behavioural Therapy (CBT):</strong> Understanding the connection between thoughts, feelings, and behaviors</li>
+                                <li><strong>Acceptance and Commitment Therapy (ACT):</strong> Developing psychological flexibility and living according to your values</li>
+                                <li><strong>Dialectical Behaviour Therapy (DBT) skills:</strong> Emotional regulation, distress tolerance, and interpersonal skills</li>
+                                <li><strong>Somatic approaches:</strong> Working with the body and nervous system</li>
+                                <li><strong>Trauma-informed care:</strong> Understanding how past experiences impact current functioning</li>
+                            </ul>
+                            <p>All approaches are adapted to be neuro-affirming and culturally responsive. We'll discuss what feels right for you.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you work with children?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We work with clients aged 16 and over. For younger children, we recommend finding a psychologist who specializes in child and adolescent therapy.</p>
+                            <p>If you're a parent looking for support around your child's neurodivergence or LGBTQIA+ identity, we'd be happy to work with you as the parent to develop strategies and understanding.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Support -->
+                <div class="faq-category">
+                    <div class="faq-category-header">
+                        <h2>Technical Support</h2>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What if my technology fails during a session?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Don't worry! Technology issues happen. Here's what we do:</p>
+                            <ul>
+                                <li><strong>Video fails:</strong> We'll switch to phone audio to continue the session</li>
+                                <li><strong>Internet drops out:</strong> Keep your phone nearby - we'll call you</li>
+                                <li><strong>Audio issues:</strong> We can use the chat function to communicate while troubleshooting</li>
+                                <li><strong>Complete failure:</strong> We'll reschedule without any cancellation fee</li>
+                            </ul>
+                            <p>You won't lose your session time due to technical difficulties. We always have backup plans!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Can I join the session from my phone?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, you can use your phone, though we recommend a computer or tablet when possible for the best experience.</p>
+                            <p><strong>Phone advantages:</strong></p>
+                            <ul>
+                                <li>More portable and private</li>
+                                <li>Good for sessions while traveling</li>
+                                <li>Familiar device</li>
+                            </ul>
+                            <p><strong>Computer/tablet advantages:</strong></p>
+                            <ul>
+                                <li>Larger screen for better connection</li>
+                                <li>Better audio quality</li>
+                                <li>Easier to see non-verbal communication</li>
+                                <li>More stable connection</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Can my support person join the session?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! If having a support person present would be helpful, they're very welcome to join. This might include:</p>
+                            <ul>
+                                <li>Partners or spouses</li>
+                                <li>Family members</li>
+                                <li>Friends</li>
+                                <li>Support workers or carers</li>
+                                <li>Interpreters</li>
+                            </ul>
+                            <p>Just let us know beforehand so we can plan the session accordingly. We can also have them join for part of the session if that's preferred.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do I need to have my camera on?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>While video can help us connect better, it's not mandatory. Your comfort is most important.</p>
+                            <p><strong>Camera off might be better if you:</strong></p>
+                            <ul>
+                                <li>Feel self-conscious about your appearance</li>
+                                <li>Are in a space that's not completely private</li>
+                                <li>Find eye contact overwhelming</li>
+                                <li>Are having a particularly difficult day</li>
+                                <li>Prefer to focus on what you're saying rather than how you look</li>
+                            </ul>
+                            <p>You can also turn your camera on and off during the session as needed.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What if I can't find a completely private space?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We can work with what you have! Options include:</p>
+                            <ul>
+                                <li><strong>Use headphones</strong> so others can't hear our conversation</li>
+                                <li><strong>Sit in your car</strong> for privacy</li>
+                                <li><strong>Use a white noise app</strong> outside your door</li>
+                                <li><strong>Schedule sessions</strong> when others are out</li>
+                                <li><strong>Ask household members</strong> to give you space during the session</li>
+                                <li><strong>Turn your camera off</strong> if you're worried about background</li>
+                            </ul>
+                            <p>Let us know your situation and we'll help you find solutions that work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Still Have Questions -->
+        <section class="section">
+            <div class="container text-center">
+                <h2>Still Have Questions?</h2>
+                <p>Can't find what you're looking for? We're here to help!</p>
+                <div class="mt-3">
+                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                    <a href="telehealth.html" class="btn btn-secondary">Telehealth Info</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crisis Resources -->
+        <section class="section">
+            <div class="container">
+                <div class="crisis-box">
+                    <h4>Need Immediate Support?</h4>
+                    <p>If you're in crisis or need immediate support, please reach out to:</p>
+                    <ul>
+                        <li><strong>Lifeline:</strong> 13 11 14 (24/7)</li>
+                        <li><strong>Suicide Call Back Service:</strong> 1300 659 467</li>
+                        <li><strong>QLife (LGBTQIA+ support):</strong> 1800 184 527</li>
+                        <li><strong>Emergency:</strong> 000</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Affirming Minds</h4>
+                    <p>Neuro-affirming, inclusive telehealth psychology services across Australia.</p>
+                    <p>AHPRA Registration: PSY0002XXXXX</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="about.html">About Meg</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="telehealth.html">Telehealth Info</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Important Information</h4>
+                    <p>This service is not a crisis service. If you need immediate support, please contact emergency services or crisis helplines.</p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Terms of Service</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Affirming Minds. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
