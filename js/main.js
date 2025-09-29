@@ -92,7 +92,7 @@ function initFAQAccordions() {
                 icon.classList.toggle('active');
             }
 
-            // Optional: Close other FAQ items (accordion behavior)
+            // Optional: Close other FAQ items (Accordion behavior)
             // Uncomment the following lines if you want only one FAQ open at a time
 
             faqQuestions.forEach(otherQuestion => {
