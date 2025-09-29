@@ -17,7 +17,7 @@
 
     <style>
         .booking-section {
-            background: linear-gradient(135deg, var(--primary-teal-light) 0%, var(--primary-teal) 100%);
+            background: linear-gradient(135deg, var(--primary-sage-light) 0%, var(--primary-sage) 100%);
             color: var(--text-light);
             padding: var(--spacing-xxl) 0;
             text-align: center;
@@ -80,12 +80,12 @@
         .contact-icon {
             font-size: 1.5rem;
             margin-right: var(--spacing-md);
-            color: var(--primary-teal);
+            color: var(--primary-sage);
         }
 
         .response-time {
-            background: linear-gradient(135deg, rgba(74, 155, 155, 0.1), rgba(74, 155, 155, 0.05));
-            border-left: 4px solid var(--primary-teal);
+            background: linear-gradient(135deg, rgba(128, 152, 124, 0.1), rgba(128, 152, 124, 0.05));
+            border-left: 4px solid var(--primary-sage);
             padding: var(--spacing-lg);
             margin: var(--spacing-lg) 0;
             border-radius: 0 var(--border-radius) var(--border-radius) 0;
@@ -99,7 +99,7 @@
         }
 
         .office-hours h4 {
-            color: var(--primary-teal);
+            color: var(--primary-sage);
             margin-bottom: var(--spacing-md);
         }
 
@@ -125,7 +125,7 @@
         }
 
         .step-number-large {
-            background: var(--primary-teal);
+            background: var(--primary-sage);
             color: var(--text-light);
             width: 60px;
             height: 60px;
@@ -159,7 +159,15 @@
     <!-- Navigation -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container nav-container">
-            <a href="index.html" class="nav-brand">Affirming Minds</a>
+            <a href="index.html" class="nav-brand">
+                <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Brain shape -->
+                    <path d="M8 12c0-4.4 3.6-8 8-8s8 3.6 8 8c0 1.2-.3 2.3-.8 3.3.5.7.8 1.5.8 2.4 0 2.2-1.8 4-4 4-.6 0-1.2-.1-1.7-.4-.8 1.2-2.1 2-3.6 2-1.8 0-3.3-1.1-3.9-2.6C9.6 20.3 8.8 20 8 20c-2.2 0-4-1.8-4-4 0-1.3.6-2.4 1.5-3.1C5.2 12.3 5 11.7 5 11c0-1.7 1.3-3 3-3z" fill="#80987c"/>
+                    <!-- Checkmark -->
+                    <path d="M12 16l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Affirming Minds
+            </a>
 
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="hamburger"></span>
@@ -181,60 +189,24 @@
 
     <!-- Main Content -->
     <main id="main">
-        <!-- Booking Section -->
+        <!-- Contact Section -->
         <section class="booking-section">
             <div class="container">
-                <h1>Book Your Session</h1>
-                <p style="font-size: 1.25rem; margin-bottom: var(--spacing-xl);">Ready to take the next step? Book your session online or get in touch with any questions.</p>
+                <h1>Get Started</h1>
+                <p style="font-size: 1.25rem; margin-bottom: var(--spacing-xl);">Ready to take the next step? Request an appointment or get in touch with any questions.</p>
 
-                <div class="booking-widget">
-                    <h3>Online Booking</h3>
-                    <p>Book your session through our secure Halaxy booking system. Choose a time that works for you and complete your intake forms online.</p>
+                <div class="process-explanation" style="background: var(--text-light); padding: var(--spacing-xl); border-radius: var(--border-radius); margin: var(--spacing-xl) 0; text-align: left; color: var(--text-dark);">
+                    <h3>How It Works</h3>
+                    <p>After receiving your appointment request, we'll review your information and send you our intake and consent forms before arranging your first appointment.</p>
+                </div>
 
-                    <!-- Placeholder for Halaxy booking widget -->
-                    <div style="background: var(--light-gray); padding: var(--spacing-xl); border-radius: var(--border-radius); margin: var(--spacing-lg) 0;">
-                        <p><strong>Halaxy Booking Widget</strong></p>
-                        <p>This is where the Halaxy booking widget would be embedded. For now, please use the button below to access our booking system.</p>
-                    </div>
-
-                    <a href="#" class="btn btn-primary" style="background: var(--primary-teal); color: var(--text-light);">Book Now via Halaxy</a>
-                    <p style="margin-top: var(--spacing-md); font-size: 0.9rem;">You'll be redirected to our secure booking system</p>
+                <div class="important-notice" style="background: #FFF8E1; border-left: 4px solid #FFA726; padding: var(--spacing-xl); border-radius: var(--border-radius); margin: var(--spacing-xl) 0; text-align: left; color: var(--text-dark);">
+                    <h4 style="color: #F57C00; margin-bottom: var(--spacing-md);">Please Note</h4>
+                    <p>Affirming Minds is a solo practice run by Meg, who manages her own disability alongside providing services. Response times may vary, but all enquiries are important and will be responded to as soon as possible. Thank you for your patience and understanding.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Booking Steps -->
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title">How to Book</h2>
-
-                <div class="booking-steps">
-                    <div class="step-card">
-                        <div class="step-number-large">1</div>
-                        <h3>Choose Your Session</h3>
-                        <p>Select the type of session you need and find a convenient time in our online booking system.</p>
-                    </div>
-
-                    <div class="step-card">
-                        <div class="step-number-large">2</div>
-                        <h3>Complete Forms</h3>
-                        <p>Fill out your secure intake forms online before your first session to make the most of our time together.</p>
-                    </div>
-
-                    <div class="step-card">
-                        <div class="step-number-large">3</div>
-                        <h3>Attend Your Session</h3>
-                        <p>Join your session via the secure link we'll send you. Sessions are 50 minutes via telehealth.</p>
-                    </div>
-
-                    <div class="step-card">
-                        <div class="step-number-large">4</div>
-                        <h3>Follow Up</h3>
-                        <p>Receive your invoice and claim your Medicare rebate if applicable. Book future sessions as needed.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Contact Information -->
         <section class="section">
@@ -242,46 +214,91 @@
                 <h2 class="section-title">Get in Touch</h2>
 
                 <div class="contact-grid">
+                    <!-- Appointment Request Form -->
                     <div class="contact-form">
-                        <h3>Send us a Message</h3>
-                        <p>Have questions before booking? Get in touch and we'll respond within 1-2 business days.</p>
+                        <h3>Request an Appointment</h3>
+                        <p>Complete this form to request an appointment. We'll review your information and get back to you with next steps.</p>
 
-                        <form action="#" method="POST">
+                        <form action="#" method="POST" id="appointment-form">
                             <div class="form-group">
-                                <label for="name">Full Name <span style="color: var(--error);">*</span></label>
-                                <input type="text" id="name" name="name" required aria-describedby="name-help">
-                                <small id="name-help">We'll use this to address you in our response</small>
+                                <label for="client-name">Client Name <span style="color: var(--error);">*</span></label>
+                                <input type="text" id="client-name" name="client-name" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="email">Email Address <span style="color: var(--error);">*</span></label>
-                                <input type="email" id="email" name="email" required aria-describedby="email-help">
-                                <small id="email-help">We'll respond to this email address</small>
+                                <label for="pronouns">Pronouns (Optional)</label>
+                                <input type="text" id="pronouns" name="pronouns" placeholder="e.g., she/her, they/them, he/him">
                             </div>
 
                             <div class="form-group">
-                                <label for="phone">Phone Number (Optional)</label>
-                                <input type="tel" id="phone" name="phone" aria-describedby="phone-help">
-                                <small id="phone-help">Include if you'd prefer us to call you back</small>
+                                <label for="email-appointment">Email Address <span style="color: var(--error);">*</span></label>
+                                <input type="email" id="email-appointment" name="email" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="inquiry-type">Inquiry Type</label>
-                                <select id="inquiry-type" name="inquiry-type">
-                                    <option value="booking">Booking a Session</option>
-                                    <option value="services">Questions about Services</option>
-                                    <option value="pricing">Pricing & Funding Questions</option>
-                                    <option value="telehealth">Telehealth Support</option>
-                                    <option value="professional">Professional Services</option>
-                                    <option value="other">Other</option>
+                                <label for="phone-appointment">Phone Number <span style="color: var(--error);">*</span></label>
+                                <input type="tel" id="phone-appointment" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preferred-contact">Preferred Contact Method <span style="color: var(--error);">*</span></label>
+                                <select id="preferred-contact" name="preferred-contact" required>
+                                    <option value="">Please select...</option>
+                                    <option value="email">Email</option>
+                                    <option value="phone">Phone</option>
+                                    <option value="text">Text</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
-                                <label for="message">Your Message <span style="color: var(--error);">*</span></label>
-                                <textarea id="message" name="message" required aria-describedby="message-help" placeholder="Please share any questions, concerns, or specific needs you'd like us to know about..."></textarea>
-                                <small id="message-help">Be as detailed as you'd like - this helps us provide a more helpful response</small>
+                                <label for="dob">Date of Birth <span style="color: var(--error);">*</span></label>
+                                <input type="date" id="dob" name="dob" required>
                             </div>
+
+                            <div class="form-group">
+                                <label for="state">State <span style="color: var(--error);">*</span></label>
+                                <select id="state" name="state" required>
+                                    <option value="">Please select...</option>
+                                    <option value="NSW">NSW</option>
+                                    <option value="VIC">VIC</option>
+                                    <option value="QLD">QLD</option>
+                                    <option value="SA">SA</option>
+                                    <option value="WA">WA</option>
+                                    <option value="TAS">TAS</option>
+                                    <option value="NT">NT</option>
+                                    <option value="ACT">ACT</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Funding Options (select all that apply):</label>
+                                <div style="display: grid; gap: var(--spacing-sm); margin-top: var(--spacing-sm);">
+                                    <label style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                                        <input type="checkbox" name="funding" value="mhcp" style="width: auto;">
+                                        <span>Mental Health Care Plan</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                                        <input type="checkbox" name="funding" value="ndis" style="width: auto;">
+                                        <span>NDIS</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                                        <input type="checkbox" name="funding" value="private" style="width: auto;">
+                                        <span>Private/Self-funded</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                                        <input type="checkbox" name="funding" value="insurance" style="width: auto;">
+                                        <span>Private Health Insurance</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="support-needed">Please briefly describe what support you're seeking <span style="color: var(--error);">*</span></label>
+                                <textarea id="support-needed" name="support-needed" required placeholder="Tell us about what you're looking for help with..."></textarea>
+                            </div>
+
+                            <!-- Honeypot field for spam protection -->
+                            <input type="text" name="website" style="display: none;" tabindex="-1" autocomplete="off">
 
                             <div class="form-group">
                                 <label style="display: flex; align-items: start; gap: var(--spacing-sm);">
@@ -290,11 +307,47 @@
                                 </label>
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <button type="submit" class="btn btn-primary">Send Appointment Request</button>
+                        </form>
+                    </div>
+
+                    <!-- General Enquiries Form -->
+                    <div class="contact-form">
+                        <h3>General Enquiries</h3>
+                        <p>Have questions about our services, pricing, or anything else? Send us a message.</p>
+
+                        <form action="#" method="POST" id="enquiry-form">
+                            <div class="form-group">
+                                <label for="enquiry-name">Name <span style="color: var(--error);">*</span></label>
+                                <input type="text" id="enquiry-name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="enquiry-email">Email <span style="color: var(--error);">*</span></label>
+                                <input type="email" id="enquiry-email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="enquiry-subject">Subject <span style="color: var(--error);">*</span></label>
+                                <input type="text" id="enquiry-subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="enquiry-message">Message <span style="color: var(--error);">*</span></label>
+                                <textarea id="enquiry-message" name="message" required placeholder="Your message..."></textarea>
+                            </div>
+
+                            <!-- Honeypot field for spam protection -->
+                            <input type="text" name="website" style="display: none;" tabindex="-1" autocomplete="off">
+
+                            <button type="submit" class="btn btn-primary">Send Enquiry</button>
                         </form>
                     </div>
 
                     <div class="contact-info">
+                        <div style="text-align: center;">
+                            <img src="images/meg-photo-3.jpg" alt="Meg Wilson, Registered Psychologist at Affirming Minds" class="contact-photo">
+                        </div>
                         <h3>Contact Information</h3>
 
                         <div class="contact-method">

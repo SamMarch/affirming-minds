@@ -126,8 +126,10 @@ function initFormValidation() {
 
     forms.forEach(form => {
         form.addEventListener('submit', function(event) {
-            if (!validateForm(this)) {
-                event.preventDefault();
+            event.preventDefault(); // Always prevent default to handle submission
+
+            if (validateForm(this)) {
+                handleFormSubmission(this);
             }
         });
 
@@ -147,6 +149,79 @@ function initFormValidation() {
 }
 
 /**
+ * Handle form submission
+ */
+function handleFormSubmission(form) {
+    const formId = form.id;
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
+
+    // Show loading state
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+
+    // Check for honeypot spam
+    const honeypot = form.querySelector('input[name="website"]');
+    if (honeypot && honeypot.value) {
+        // Spam detected, silently reject
+        showFormMessage(form, 'error', 'There was an error submitting your form. Please try again.');
+        resetSubmitButton(submitButton, originalText);
+        return;
+    }
+
+    // Simulate form submission (replace with actual form handler)
+    setTimeout(() => {
+        showFormMessage(form, 'success', 'Thank you! Your ' + (formId === 'appointment-form' ? 'appointment request' : 'enquiry') + ' has been received. We\'ll get back to you as soon as possible.');
+        form.reset();
+        resetSubmitButton(submitButton, originalText);
+    }, 1000);
+}
+
+/**
+ * Show form message
+ */
+function showFormMessage(form, type, message) {
+    // Remove existing messages
+    const existingMessage = form.querySelector('.form-message');
+    if (existingMessage) {
+        existingMessage.remove();
+    }
+
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'form-message';
+    messageDiv.style.cssText = `
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius);
+        margin-top: var(--spacing-md);
+        font-weight: 600;
+    `;
+
+    if (type === 'success') {
+        messageDiv.style.backgroundColor = '#E8F5E9';
+        messageDiv.style.color = '#2E7D32';
+        messageDiv.style.border = '1px solid #4CAF50';
+    } else {
+        messageDiv.style.backgroundColor = '#FFEBEE';
+        messageDiv.style.color = '#C62828';
+        messageDiv.style.border = '1px solid #F44336';
+    }
+
+    messageDiv.textContent = message;
+    form.appendChild(messageDiv);
+
+    // Scroll to message
+    messageDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+/**
+ * Reset submit button
+ */
+function resetSubmitButton(button, originalText) {
+    button.textContent = originalText;
+    button.disabled = false;
+}
+
+/**
  * Validate the entire form
  */
 function validateForm(form) {
@@ -158,6 +233,16 @@ function validateForm(form) {
             isValid = false;
         }
     });
+
+    // Special validation for appointment form
+    if (form.id === 'appointment-form') {
+        // Check if at least one funding option is selected
+        const fundingCheckboxes = form.querySelectorAll('input[name="funding"]:checked');
+        if (fundingCheckboxes.length === 0) {
+            showFormMessage(form, 'error', 'Please select at least one funding option.');
+            isValid = false;
+        }
+    }
 
     return isValid;
 }
@@ -312,7 +397,7 @@ function manageFocusIndicators() {
         style.id = 'focus-styles';
         style.textContent = `
             .keyboard-navigation *:focus {
-                outline: 3px solid var(--primary-teal) !important;
+                outline: 3px solid var(--primary-sage) !important;
                 outline-offset: 2px !important;
                 box-shadow: 0 0 0 5px rgba(74, 155, 155, 0.2) !important;
             }
@@ -337,7 +422,7 @@ function initScrollToTop() {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background: var(--primary-teal);
+        background: var(--primary-sage);
         color: var(--text-light);
         border: none;
         font-size: 1.5rem;
@@ -372,12 +457,12 @@ function initScrollToTop() {
 
     // Hover effects
     scrollButton.addEventListener('mouseenter', function() {
-        this.style.background = 'var(--primary-teal-dark)';
+        this.style.background = 'var(--primary-sage-dark)';
         this.style.transform = 'translateY(-2px)';
     });
 
     scrollButton.addEventListener('mouseleave', function() {
-        this.style.background = 'var(--primary-teal)';
+        this.style.background = 'var(--primary-sage)';
         this.style.transform = 'translateY(0)';
     });
 }

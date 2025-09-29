@@ -200,7 +200,7 @@
 /* High Contrast Mode */
 @media (prefers-contrast: high) {
   :root {
-    --primary-teal: #006666;
+    --primary-sage: #4a5c47;
     --text-dark: #000000;
     --text-light: #FFFFFF;
   }
